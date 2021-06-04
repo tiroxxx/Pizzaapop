@@ -59,35 +59,45 @@ body {
     border-radius: 10px;
 }
 
+.jumbotron {
+    height: 60vh;
+}
+
+.landing-picture {
+    height: 100%;
+    background-image: url(../pictures/pizzaapop-info.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media (max-width: 400px) {
     .toggle-button {
-        display:flex;
+        display: flex;
     }
-
     .navbar-links {
         display: none;
         width: 100%;
     }
-
     .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
     }
-
     .navbar-links {
         text-align: center;
     }
-
     .navbar-links li a {
         padding: 0.5rem 1rem;
     }
-
     .navbar-links.active {
         display: flex;
+    }
+
+    .landing-picture {
+        background-size: cover;
     }
 }
