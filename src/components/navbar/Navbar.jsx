@@ -1,8 +1,8 @@
 import './navbar.css';
 
-export default function navbar() {
+export default function navbar({ menuOpen, setMenuOpen }) {
   return (
-    <div className="navbar">
+    <div className={'navbar ' + (menuOpen && 'active')}>
       <div className="wrapper">
         <div className="left">
           <a href="#intro">
@@ -14,11 +14,11 @@ export default function navbar() {
           </a>
         </div>
         <div className="right">
-          <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
-          </ul>
+          <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+            <span className="line1"></span>
+            <span className="line2"></span>
+            <span className="line3"></span>
+          </div>
         </div>
       </div>
     </div>
