@@ -1,0 +1,41 @@
+.hamburgerMenu {
+  width: 200px;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+}
+
+.hamburgerMenu.active {
+  right: 0;
+}
+
+.hamburgerMenu ul {
+  padding: 0;
+  list-style: none;
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  width: 60%;
+}
+
+.hamburgerMenu ul li {
+  margin-bottom: 30px;
+}
+
+.hamburgerMenu ul li a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.hamburgerMenu ul li a:hover {
+  font-weight: 700;
+}

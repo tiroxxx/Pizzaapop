@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <HamburgerMenu />
+      <HamburgerMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Intro />
     </div>
   );

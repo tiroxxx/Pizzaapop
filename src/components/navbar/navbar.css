@@ -4,7 +4,7 @@
   height: 100px;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 5;
   /* transition: all 1s ease; */
 }
 
@@ -34,6 +34,7 @@
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+  
 }
 
 .hamburger span {
@@ -42,6 +43,7 @@
   background-color: white;
   transform-origin: left;
   transition: all 1s ease;
+  
 }
 
 .navbar.active .hamburger span:first-child{

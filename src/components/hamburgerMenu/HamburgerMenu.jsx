@@ -1,12 +1,18 @@
 import './hamburgerMenu.css';
 
-export default function HamburgerMenu() {
+export default function HamburgerMenu({ menuOpen, setMenuOpen }) {
   return (
-    <div className="hamburgerMenu">
+    <div className={'hamburgerMenu ' + (menuOpen && 'active')}>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="">Home</a>
+        </li>
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="">About</a>
+        </li>
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="">Contact</a>
+        </li>
       </ul>
     </div>
   );
