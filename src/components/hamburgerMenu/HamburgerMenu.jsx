@@ -5,13 +5,13 @@ export default function HamburgerMenu({ menuOpen, setMenuOpen }) {
     <div className={'hamburgerMenu ' + (menuOpen && 'active')}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="">About</a>
+          <a href="#about">About</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </div>
